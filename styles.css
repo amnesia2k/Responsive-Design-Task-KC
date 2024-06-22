@@ -274,24 +274,16 @@ nav {
     }
 
     .hero-box {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute; */
     width: 400px;
     height: 300px;
     top: 170px;
     padding: 0 0 0 60px;
-    /* border-radius: 0px 60px 60px 0px;
-    gap: 32px;
-    background-color: #ffffff; */
 }
 
 .hero-text {
     width: 300px;
     height: 200px;
     gap: 20px;
-    /* justify-content: center; */
 }
 
 .hero-text h1 {
@@ -322,7 +314,6 @@ nav {
     height: 800px;
     top: 1020px;
     left: 60px;
-    /* padding: 0px; */
     }
 
     .future-img .img-3 {
@@ -330,7 +321,7 @@ nav {
     }
 
     .future-container {
-        margin-top: -15%;
+        /* margin-top: -15%; */
         width: 640px;
         height: 378px;
         left: 640px;
