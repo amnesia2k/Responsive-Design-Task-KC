@@ -58,6 +58,11 @@ nav {
     top: 83px;
 }
 
+.hero img {
+    width: 1440px;
+    height: 767px;
+}
+
 .hero-box {
     display: flex;
     flex-direction: column;
@@ -249,7 +254,7 @@ nav {
         height: 60px;
         /* align-self: right; */
         top: 30px;
-        left: 700px;
+        left: 670px;
     }
 
     .hamburger .fa-bars {
@@ -258,22 +263,93 @@ nav {
         font-size: 30px;
     }
 
-    /* .hero {
-        width: 100%;
+    .hero {
+        width: 768px;
         height: 767px;
         top: 83px;
-    } */
+    }
 
-    /* .hero img {
-        object-fit: cover;
-    } */
+    .hero img {
+        width: 768px;
+    }
+
+    .hero-box {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute; */
+    width: 400px;
+    height: 300px;
+    top: 170px;
+    padding: 0 0 0 60px;
+    /* border-radius: 0px 60px 60px 0px;
+    gap: 32px;
+    background-color: #ffffff; */
+}
+
+.hero-text {
+    width: 300px;
+    height: 200px;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+.hero-text h1 {
+    margin: auto;
+    width: 290px;
+    height: 111px;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #181A18;
+}
+
+.hero-text p {
+    margin: auto;
+    padding-top: 20px;
+    width: 325px;
+    height: 72px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #181A18;
+}
+
+     .future {
+    display: grid;
+    position: absolute;
+    width: 720px;
+    height: 800px;
+    top: 1020px;
+    left: 60px;
+    /* padding: 0px; */
+    }
+
+    .future-img .img-3 {
+        border-radius: 0px, 60px, 0px, 0px;
+    }
+
+    .future-container {
+        margin-top: -15%;
+        width: 640px;
+        height: 378px;
+        left: 640px;
+        border-radius: 0px 0px 40px 40px;
+        padding: 120px 80px 120px 80px;
+        /* gap: 32px; */
+        background-color: #F2F0F2;
+    }
+
+    .future-img .img-3 {
+    border-radius: 0;
+    }
 
     .features {
         position: absolute;
-        /* border: #000000 1px solid; */
+        /* /* border: #000000 1px solid; */
         width: 768px;
         height: 650px;
-        top: 1538px;
+        top: 1800px;
         padding: 0px 40px 0px 40px;
         gap: 30px;
     }
