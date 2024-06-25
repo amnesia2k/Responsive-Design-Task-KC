@@ -240,6 +240,7 @@ nav {
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
+        /* overflow: hidden; */
     }
 
     .header {
@@ -284,32 +285,32 @@ nav {
     padding: 0 0 0 60px;
 }
 
-.hero-text {
-    width: 300px;
-    height: 200px;
-    gap: 20px;
-}
+    .hero-text {
+        width: 300px;
+        height: 200px;
+        gap: 20px;
+    }
 
-.hero-text h1 {
-    margin: auto;
-    width: 290px;
-    height: 111px;
-    font-size: 43px;
-    font-weight: 500;
-    line-height: 50px;
-    color: #181A18;
-}
+    .hero-text h1 {
+        margin: auto;
+        width: 290px;
+        height: 111px;
+        font-size: 43px;
+        font-weight: 500;
+        line-height: 50px;
+        color: #181A18;
+    }
 
-.hero-text p {
-    margin: auto;
-    padding-top: 20px;
-    width: 325px;
-    height: 72px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #181A18;
-}
+    .hero-text p {
+        margin: auto;
+        padding-top: 20px;
+        width: 325px;
+        height: 72px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #181A18;
+    }
 
      .future {
     display: grid;
@@ -424,15 +425,20 @@ nav {
 
 /* Mobile Screen  */
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (max-width: 376px) {
     body {
         width: 100%;
+        overflow: hidden;
     }
 
     .header {
         width: 100%;
         height: 64px;
     }
+
+    /* nav {
+        width: 375px;
+    } */
 
     .logo {
         margin-left: -40px;
