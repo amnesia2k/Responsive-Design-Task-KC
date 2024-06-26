@@ -7,23 +7,27 @@
 }
 
 body {
+    width: 100%;
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 83px;
     padding: 0px 60px 0px 60px;
     gap: 10px;
     color: #ffffff33;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: 100%;
     height: 58px;
-    margin-top: 10px;
+    margin-top: 10px auto;
 }
 
 .nav-link {
@@ -53,14 +57,16 @@ nav {
 }
 
 .hero {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 767px;
     top: 83px;
+    /* position: relative; */
 }
 
 .hero img {
-    width: 1440px;
-    height: 767px;
+    width: 100%;
+    height: auto;
 }
 
 .hero .mobile-img {
@@ -82,7 +88,8 @@ nav {
 }
 
 .hero-text {
-    width: 325px;
+    width: 100%;
+    max-width: 325px;
     height: 216px;
     gap: 24px;
     /* justify-content: center; */
@@ -90,7 +97,7 @@ nav {
 
 .hero-text h1 {
     margin: auto;
-    width: 325px;
+    width: 100%;
     height: 120px;
     font-size: 52px;
     font-weight: 700;
@@ -101,7 +108,7 @@ nav {
 .hero-text p {
     margin: auto;
     padding-top: 20px;
-    width: 325px;
+    width: 100%;
     height: 72px;
     font-size: 18px;
     font-weight: 400;
@@ -112,7 +119,8 @@ nav {
 .future {
     display: flex;
     position: absolute;
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: 378px;
     top: 1020px;
     left: 80px;
@@ -121,22 +129,22 @@ nav {
 .future-img {
     display: flex;
     flex-wrap: wrap;
-    width: 640px;
+    width: 50%;
     height: 378px;
 }
 
 .future-container {
-    width: 640px;
+    width: 50%;
     height: 378px;
     left: 640px;
     border-radius: 0px 60px 60px 0px;
-    padding: 120px 80px 120px 80px;
+    padding: 120px 80px;
     gap: 32px;
     background-color: #F2F0F2;
 }
 
 .future-container h2 {
-    width: 480px;
+    width: 100%;
     height: 54px;
     font-size: 48px;
     font-weight: 700;
@@ -145,7 +153,7 @@ nav {
 }
 
 .future-container p {
-    width: 480px;
+    width: 100%;
     height: 60px;
     padding-top: 30px;
     font-size: 16px;
@@ -157,22 +165,25 @@ nav {
 .features {
     position: absolute;
     /* border: #000000 1px solid; */
-    width: 1440px;
-    height: 480px;
+    width: 100%;
+    max-width: 1440px;
+    height: 500px;
     top: 1538px;
-    padding: 0px 80px 0px 80px;
+    padding: 0px 80px;
+    margin: 0 auto;
     gap: 60px;
 }
 
 .features-title {
-    width: 847px;
+    width: 100%;
+    max-width: 847px;
     height: 172px;
     gap: 16px;
     margin: auto;
 }
 
 .features-title h2 {
-    width: 847px;
+    width: 100%;
     height: 108px;
     font-size: 48px;
     font-weight: 700;
@@ -195,7 +206,8 @@ nav {
 .features-list {
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 248px;
     padding-top: 50px;
     gap: 20px;
@@ -205,7 +217,7 @@ nav {
     width: 305px;
     height: 248px;
     border-radius: 30px;
-    padding: 32px 40px 32px 40px;
+    padding: 32px 40px;
     gap: 16px;
     background-color: #e2f1e8;
 }
@@ -217,7 +229,7 @@ nav {
 }
 
 .list h4 {
-    width: 225px;
+    width: 100%;
     height: 32px;
     font-size: 24px;
     font-weight: 700;
@@ -226,7 +238,7 @@ nav {
 }
 
 .list p {
-    width: 225px;
+    width: 100%;
     height: 60px;
     padding-top: 20px;
     font-size: 16px;
@@ -239,8 +251,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     body {
-        width: 100%;
-        overflow: hidden;
+        width: 768px;
     }
 
     .header {
@@ -257,7 +268,6 @@ nav {
         position: absolute;
         width: 60px;
         height: 60px;
-        /* align-self: right; */
         top: 30px;
         left: 670px;
     }
@@ -269,31 +279,33 @@ nav {
     }
 
     .hero {
-        width: 768px;
+        width: 100%;
         height: 767px;
         top: 83px;
     }
 
     .hero img {
-        width: 768px;
+        width: 100%;
     }
 
     .hero-box {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height: 300px;
-    top: 170px;
+    top: 140px;
     padding: 0 0 0 60px;
-}
+    }
 
     .hero-text {
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         height: 200px;
         gap: 20px;
     }
 
     .hero-text h1 {
         margin: auto;
-        width: 290px;
+        width: 100%;
         height: 111px;
         font-size: 43px;
         font-weight: 500;
@@ -304,7 +316,7 @@ nav {
     .hero-text p {
         margin: auto;
         padding-top: 20px;
-        width: 325px;
+        width: 100%;
         height: 72px;
         font-size: 18px;
         font-weight: 400;
@@ -315,52 +327,47 @@ nav {
      .future {
     display: grid;
     position: absolute;
-    width: 720px;
+    width: 100%;
+    max-width: 720px;
     height: 800px;
-    top: 1020px;
+    top: 600px;
     left: 60px;
     }
 
-    .future-img .img-3 {
-        border-radius: 0px, 60px, 0px, 0px;
+    .future-img {
+        width: 100%;
     }
 
     .future-container {
-        /* margin-top: -15%; */
-        width: 640px;
-        height: 378px;
-        left: 640px;
+        width: 100%;
+        max-width: 641px;
+        height: auto;
         border-radius: 0px 0px 40px 40px;
-        padding: 120px 80px 120px 80px;
-        /* gap: 32px; */
+        padding: 120px 60px;
         background-color: #F2F0F2;
     }
 
-    /* .future-img .img-3 {
-    border-radius: 0;
-    } */
-
     .features {
         position: absolute;
-        /* /* border: #000000 1px solid; */
-        width: 768px;
-        height: 650px;
-        top: 1800px;
+        width: 100%;
+        height: auto;
+        top: 1470px;
         padding: 0px 40px 0px 40px;
         gap: 30px;
     }
 
     .features-title {
-        width: 680px;
+        width: 100%;
+        max-width: 680px;
         height: 172px;
         gap: 10px;
         margin: auto;
     }
 
     .features-title h2 {
-        width: 680px;
-        height: 90px;
-        font-size: 35px;
+        width: 100%;
+        height: 108px;
+        font-size: 40px;
         font-weight: 700;
         line-height: 46px;
         text-align: center;
@@ -368,12 +375,12 @@ nav {
     }
 
     .features-title p {
-        width: 680px;
-        height: 40px;
-        padding-top: 25px;
-        font-size: 18px;
+        width: 100%;
+        height: 48px;
+        padding-top: 20px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 22px;
         text-align: center;
         color: #181A18;
     }
@@ -381,18 +388,17 @@ nav {
     .features-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* justify-content: space-between; */
         width: 680px;
         height: 248px;
-        padding: 50px 0px 50px 70px;
+        padding: 50px 50px 50px 70px;
         gap: 20px;
     }
 
     .features-list .list {
-        width: 250px;
-        height: 185px;
-        border-radius: 20px;
-        padding: 22px 28px 22px 28px;
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        padding: 20px;
         gap: 10px;
         background-color: #e2f1e8;
     }
@@ -428,18 +434,9 @@ nav {
 @media screen and (max-width: 376px) {
     body {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
-
-    .header {
-        width: 100%;
-        height: 64px;
-    }
-
-    /* nav {
-        width: 375px;
-    } */
-
+    
     .logo {
         margin-left: -40px;
         margin-top: 4px;
@@ -447,6 +444,11 @@ nav {
         height: 40px;
     }
 
+    .header {
+        width: 100%;
+        height: 64px;
+    }
+    
     .nav-link {
         display: none;
     }
@@ -468,49 +470,49 @@ nav {
     }
 
     .hero {
-        width: 375px;
-        height: 767px;
-        top: 64px;
-    }
-
-    .hero img .mobile-img {
-        width: 375px;
+        width: 100%;
+        height: 614px;
+        top: 83px;
     }
 
     .hero img {
-        width: 375px;
+        display: block;
+        width: 100%;
+        height: 614px;
     }
 
     .hero-box {
-    width: 345px;
+    width: 90%;
+    max-width: 350px;
     height: 232px;
-    top: 93px;
-    padding: 0px 40px 40px 0px;
+    top: 85px;
+    padding: 0px 20px;
     }
 
     .hero-text {
-        width: 296px;
+        width: 100%;
+        max-width: 250px;
         height: 168px;
-        gap: 16px;
-        padding: 10px 0px 0px 25px;
+        padding-left: 10px;
+        gap: 15px;
     }
 
     .hero-text h1 {
         margin: auto;
-        width: 296px;
+        width: 100%;
         height: 92px;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
-        line-height: 46px;
+        line-height: 35px;
         color: #181A18;
     }
 
     .hero-text p {
         margin: auto;
-        padding-top: 20px;
-        width: 296px;
+        width: 100%;
         height: 60px;
-        font-size: 16px;
+        padding: 0px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 20px;
         color: #181A18;
@@ -519,27 +521,29 @@ nav {
      .future {
     display: grid;
     position: absolute;
-    width: 342px;
-    height: 552px;
-    top: 1020px;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    margin: 0 auto;
+    top: 700px;
     margin-left: -45px;
     }
 
     .future-img {
-        width: 342px;
+        width: 90%;
         height: 320px;
     }
 
     .future-img img {
-        width: 171px;
+        width: 50%;
         height: 160px;
     }
 
     .future-container {
-        width: 343px;
-        height: 232px;
+        width: 90%;
+        height: auto;
         border-radius: 0px 0px 20px 20px;
-        padding: 32px;
+        padding: 60px 30px;
         gap: 20px;
         background-color: #F2F0F2;
     }
@@ -565,34 +569,35 @@ nav {
     .features {
         position: absolute;
         /* border: #000000 1px solid; */
-        width: 375px;
-        height: 1080px;
-        top: 1800px;
-        padding: 0px 16px 0px 16px;
-        gap: 40px;
+        width: 100%;
+        height: auto;
+        top: 1332px;
+        padding: 0px 30px;
+        gap: 20px;
     }
 
     .features-title {
-        width: 343px;
-        height: 164px;
-        gap: 12px;
+        width: 100%;
+        max-width: 375px;
+        height: 150px;
+        gap: 5px;
         margin: auto;
     }
 
     .features-title h2 {
-        width: 343px;
+        width: 100%;
         height: 72px;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 700;
-        line-height: 36px;
+        line-height: 34px;
         text-align: center;
         color: #181A18;
     }
 
     .features-title p {
-        width: 343px;
+        width: 100%;
         height: 80px;
-        padding-top: 25px;
+        padding-top: 15px;
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
@@ -603,31 +608,32 @@ nav {
     .features-list {
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: -69px;
-        width: 343px;
+        margin-left: -58px;
+        width: 100%;
         height: 776px;
         padding: 50px 0px 50px 70px;
-        gap: 20px;
+        gap: 15px;
     }
 
     .features-list .list {
-        width: 343px;
+        width: 100%;
         height: 188px;
-        border-radius: 30px;
+        border-radius: 20px;
         padding: 32px;
-        gap: 16px;
         background-color: #e2f1e8;
     }
 
     .list .fa-solid {
         width: 40px;
         height: 40px;
+        margin-left: -15px;
         font-size: 28px;
     }
 
     .list h4 {
         width: 279px;
         height: 24px;
+        margin-left: -15px;
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
@@ -637,6 +643,7 @@ nav {
     .list p {
         width: 279px;
         height: 36px;
+        margin-left: -15px;
         padding-top: 20px;
         font-size: 14px;
         font-weight: 400;
